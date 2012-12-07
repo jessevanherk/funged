@@ -1,0 +1,88 @@
+"NRTS"4#@($"RTSJ"4#@($"LNGS"4#@($"RBUS"4#@($"SRCN"4#@($1I0E0N"HTRF"4#@($"RGNF"4v
+hJ021aC7S'0D'C6G'0A'C6P'0B'C2R'0T'C3C'0Z'C3S'0S'<v  C4R'0E'C4C'0J'C2O'0O'$B$(@#<
+cmd prompt E1GJ004<  ^_^ c>5b*\0g1E c>5b*\0p0E   >      vA JSTR getstring (G)
+083*M1Z0" :dmc"S 9^      d^         d^          ^C3P'0W'<B JSTR putstring (P)
+ drawcur 0030J 55*200J55*300JM0E >_<   v1p0f< vTTg0<E    P FRTH Pick (P)
+filename prompt       v+1\ W:<         +    Ov1# 0<f+    O FRTH Over (O)
+083*M1Z0" :emanelif"S0>G:  a-|      > 0>\:  | +   p:1    J SUBR Call subr (C)
+>0E  draw current view. E+1:$<      reverse \>>OO- |$    E SUBR Return (R)
+>48*320J 48*220J    00v             0gnirts >:0\f0^>^    W NCRS putc (P)
+vSA*8aP8P8P8P8P8P8 MOO<                          VariableS NCRS puts (S)
+>5L77*c0g+5L5a*c0g+5L1 5a*+c0g+5L5v '>080p0E     min max Z NCRS clrscr (C)
+          E0p080^'$k8<|`\+*2b1:+1L< set redraw   di# cur G NCRS get char (G)
+                     ^<                          dj#  wx R NCRS refresh (R)
+                                                 dk#  hy N NCRS toggle \n (N)
+###current_filename###                                   B FNGR new print (B)
+########scratch monkey######C~@~@~D___________  ######   M NCRS Move cursor (M)
+######(looks like a lemur)### \O/\ ___  /     \ ######   T FRTH Roll (R)
+#############################   ///   \\\   \_/ ######   D STRN itoa (S)
+######################################################
+main loop. movement                     >3L01J>48*823J 0E
+>R0800J v  48*320J48*720J a826J 201-2>55*\00Jv
+ hJ0030 <  48*320J48*720J a726J 201+2^  ^66+ <^          J00a*66 J329*84J62<
+ v  11b<h  48*420J48*720J a826J 301-3^  48*520J48*720Ja726J48*520J48*220Ja7^
+ v  14b<j  48*420J48*720J a726J 301+3^  48*520J48*720Ja826J48*520J48*220Ja8^
+ v  13b<k  write file
+ v  12b<l  5a*3+a0g 96*a0g 5b*a0g   v
+ v13*a4<>  vJ+1\0T6*66 J0060 0 0 500<
+ v14*a4<<  > #vo 0E              >@
+ v  060<[     >083*M0"yek a sserP - elif etirw t'ndluoC"SG$0E
+Jv  080<]  >0I           >:fff**`|
+0v05*2a<i  edit file     ^      .<
+$v1*92b<r  005 0 0 0600J 66*6T0\1+J  v
+Lv  1cb<e  v+*5a3p0a*96p0a*5b+5$$$iv#<
+4v  16b<w  a   v+1p0e\<            >083*M0"yek a sserP - elif daB"SG$0E
+ v  000<{  >0p0>::f0g:|
+ v  000<}             >\f0p$ 66*a00J 0E
+ v  000<(       >:W48*720Jp 201+255*\00J+66*3L01Jv
+ v  000<)  >G:a-|  replace characters!
+ v1*37b<?  ^;E0$<;J328*84J627aJ027*84J023*84     <
+ v  000</
+^<  200<q
+####################################################
+2Z0I@ <- atexit
+l    init->066*201J066*301J a320J 0E
+#v        initialize some vars  77*a0g5a*a0g15a*+a0g3E <- min
+ >>:'h-m  >5000500 100 77*a07Bv 77*b0g5a*b0g15a*+b0g3E <- di
+ > :'j-m  vB70b*77 001 1000005< 77*c0g5a*c0g15a*+c0g3E <- dj
+  >:'k-m  >0000010 100 77*c07Bv 77*d0g5a*d0g15a*+d0g3E <- dk
+ > :'l-m E0B70d*77 001 0010000< 14d*+a0g96*a0g5b*a0g3E <- max
+  >:'<-m  3L6L+3L5L+3L4L+3E     14d*+b0g96*b0g5b*b0g3E <- read cur
+ > :'>-m  3L6L-3L5L-3L4L-3E     01-00 5b*b0 3B 0E      <- write cur
+  >:'[-m  clear editspace       01-00 15a*+a0 3B 0E    <- write min
+ > :']-m  
+  >:'i-m
+ > :'r-m
+  >:'e-m
+ > :'w-m
+  >:'{-m
+ > :'}-m
+  >:'(-m
+ > :')-m
+  >:'?-m
+ > :'/-m
+  >:'q-m
+####################################################
+8a*d-83*M'(W14d*+b0gDS',W96*b0gDS',W5b*b0gDS')W0E
+l
+ #      
+ v     < 
+ lv    <
+ vl#   <
+ lv    <
+ vl#   <
+ lv    <
+ vl#   <
+ lv    <
+ vl#   <
+ lv    <
+ vl#   <
+ lv    <
+ vl#   <
+ lv    <
+ vl#   <
+ lv    <
+ vl#   <
+$lv    <
+^ l#   <
+####################################################

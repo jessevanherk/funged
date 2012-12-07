@@ -1,0 +1,23 @@
+Funged key bindings
+-------------------
+i    enter insert mode. characters will be inserted until you hit 'enter'
+r    enter replace mode. characters will overwrite until you hit 'enter'
+h    move left in current plane
+j    move down in current plane
+k    move up in current plane
+l    move right in current plane
+<    move one plane forward
+>    move one plane backward
+[    rotate viewcube c-clockwise.
+]    rotate viewcube clockwise
+(    spin viewcube forward
+)    spin viewcube backwards
+{    spin viewcube left
+}    spin viewcube right
+e    edit file (asks for filename)
+w    write file (asks for filename)
+q    quit without saving.  
+?    show this help.
+/    search for a string.
+n    search again
+N    search again, but backwards.
